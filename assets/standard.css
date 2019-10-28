@@ -134,13 +134,24 @@ nav ul li {
   grid-area: grid-right;
 }
 
+#specialties p {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  position: relative;
+  top: 20%;
+}
+
 .specialties-grid {
   display: grid;
+  padding: 0;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas:
     "grid-left grid-right"
     "grid-left grid-right";
+  grid-gap: 1em;
 }
 
 #specialties ul {
@@ -152,7 +163,8 @@ nav ul li {
 #specialties ul li {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
-  font-size: 1.5em;
+  font-size: 1.25em;
+  text-align: center;
 }
 
 #menu {
@@ -166,6 +178,65 @@ nav ul li {
   box-sizing: border-box;
   position: relative;
   min-height: 100%;
+}
+
+#menu {
+  list-style: none;
+}
+
+.menu-container {
+  text-align: center;
+}
+
+.menu-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-container ul li {
+  list-style: none;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: fit-content;
+  display: inline-block;
+}
+
+.menu-container ul p {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+#menu-grid {
+  display: grid;
+  padding: 0;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "grid-left grid-right"
+    "grid-left grid-right";
+  grid-gap: 0.75em;
+}
+
+#menu-grid ul:nth-child(odd) {
+  grid-area: grid-left;
+}
+
+#menu-grid ul:nth-child(even) {
+  grid-area: grid-right;
+}
+
+#menu-grid ul {
+  text-align: center;
+}
+
+#disclaimer {
+  font-size: 0.75em;
+}
+
+#packages li {
+  font-weight: bold;
+  font-size: 1.25em;
 }
 
 #contact {
