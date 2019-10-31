@@ -5,14 +5,14 @@ body {
 }
 
 h1 {
-  font-family: "Nova Mono", monospace;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
   position: relative;
   text-align: center;
 }
 
 h2 {
-  font-family: "Nova Mono", monospace;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   padding: 0;
   margin: 0;
@@ -30,7 +30,7 @@ p {
 }
 
 #burger-menu {
-  width: 40%;
+  width: 45%;
   top: 5%;
   position: fixed;
   z-index: 10;
@@ -99,9 +99,9 @@ nav ul li {
 }
 
 #about p {
-  padding-left: 7em;
+  padding-left: 8em;
   padding-right: 1em;
-  font-size: 14px;
+  font-size: 0.75rem;
 }
 
 #about-container p:nth-child(1) {
@@ -184,6 +184,23 @@ nav ul li {
   list-style: none;
 }
 
+#menu h1 {
+  font-size: 1.5em;
+}
+
+#menu h2 {
+  font-size: 1.25em;
+}
+
+#menu p {
+  font-size: 0.8em;
+  padding-right: 1em;
+}
+
+#follow-up li {
+  font-size: 0.8em;
+}
+
 .menu-container {
   text-align: right;
 }
@@ -191,7 +208,8 @@ nav ul li {
 .menu-container ul {
   list-style: none;
   padding: 0;
-  padding-left: 7em;
+  padding-left: 8em;
+  padding-right: 1em;
 }
 
 #menu-grid {
@@ -204,6 +222,7 @@ nav ul li {
     "grid-left grid-right";
   grid-gap: 0.5em;
   font-size: 0.8em;
+  padding-right: 1em;
 }
 
 #menu-grid ul:nth-child(odd) {
@@ -221,7 +240,7 @@ nav ul li {
 }
 
 #disclaimer {
-  font-size: 0.75em;
+  font-size: 0.7em;
 }
 
 #packages li {
@@ -244,4 +263,116 @@ nav ul li {
 .fas {
   font-size: 4em;
   color: white;
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+
+  #menu h1 {
+    font-size: 5rem;
+  }
+
+  #menu h2 {
+    font-size: 4rem;
+  }
+
+  #intro p {
+    font-size: 3rem;
+  }
+
+  #about p {
+    font-size: 1.75rem;
+    padding-left: 12em;
+  }
+
+  #menu p {
+    font-size: 1.75rem;
+  }
+
+  #follow-up li {
+    font-size: 1.75rem;
+  }
+
+  .menu-container ul {
+    padding-left: 21em;
+    padding-right: 1em;
+  }
+
+  #menu-grid {
+    grid-gap: 0.5em;
+    font-size: 2rem;
+    padding-right: 1em;
+  }
+
+  #packages li {
+    font-weight: bold;
+    font-size: 3rem;
+  }
+
+  #about-container p:nth-child(1) {
+    margin-top: 5em;
+  }
+  #disclaimer {
+    font-size: 1.5rem;
+  }
+
+  .specialties-grid {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #about-container {
+    text-align: left;
+    padding-left: 16em;
+  }
+
+  #about p {
+    font-size: 1.25rem;
+  }
+
+  #menu p:first-child {
+    font-size: 1rem;
+    text-align: center;
+  }
+  #menu p:nth-child(2) {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  #menu h2 {
+    font-size: 3rem;
+  }
+
+  #packages li {
+    font-size: 2rem;
+  }
+
+  #follow-up li {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .menu-container ul #follow-up {
+    padding: 0;
+  }
+
+  #border {
+    height: 8em;
+    width: 100vw;
+    background-color: rgb(01, 02, 03);
+  }
+
+  .menu-container ul {
+    padding: 0;
+  }
+
+  #packages {
+    padding-left: 22em;
+  }
 }
