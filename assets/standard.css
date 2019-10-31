@@ -321,12 +321,36 @@ nav ul li {
     font-size: 1.5rem;
   }
 
+  #specialties {
+    height: fit-content;
+  }
+
   .specialties-grid {
     font-size: 2rem;
+  }
+  #specialties ul {
+    margin-bottom: 0;
   }
 }
 
 @media (min-width: 992px) {
+
+#burger {
+  cursor: pointer;
+}
+
+  #burger-menu {
+    width: 20%;
+  }
+
+  #intro p {
+    top: 16vh;
+  }
+
+  #about {
+    background-attachment: fixed;
+  }
+
   #about-container {
     text-align: left;
     padding-left: 16em;
@@ -334,6 +358,12 @@ nav ul li {
 
   #about p {
     font-size: 1.25rem;
+  }
+
+  #menu {
+    background-image: url("images/bg2.jpg");
+    background-attachment: fixed;
+    height: fit-content;
   }
 
   #menu p:first-child {
@@ -349,6 +379,10 @@ nav ul li {
     font-size: 3rem;
   }
 
+  #menu-grid ul {
+    margin-bottom: 0;
+  }
+
   #packages li {
     font-size: 2rem;
   }
@@ -358,8 +392,24 @@ nav ul li {
     text-align: center;
   }
 
+.menu-container {
+  text-align: center;
+}
+
   .menu-container ul #follow-up {
     padding: 0;
+  }
+
+  #menu-grid {
+    margin-bottom: 0;
+    grid-template-columns: 1fr;
+  }
+
+  #menu-grid li {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 1.25em;
+    text-align: center;
   }
 
   #border {
@@ -368,11 +418,44 @@ nav ul li {
     background-color: rgb(01, 02, 03);
   }
 
+  #border-small {
+    height: 4em;
+    width: 100vw;
+    background-color: rgb(01, 02, 03);
+  }
+
   .menu-container ul {
     padding: 0;
   }
 
-  #packages {
-    padding-left: 22em;
+  #packages p {
+    padding-left: 5em;
+    padding-right: 5em;
   }
+
+  #specialties {
+    background-attachment: fixed;
+  }
+
+  .specialties-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .specialties-grid li:last-child {
+    grid-column-start: 2;
+  }
+
+  #contact {
+    justify-content: center;
+  }
+#contact a {
+  padding-left: 2em;
+    padding-right: 2em;
+}
+
+#contact a i:hover {
+  color: #666;
+  transition: .8s;
+}
+
 }
