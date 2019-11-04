@@ -80,10 +80,22 @@ nav ul li {
   position: relative;
 }
 
+#border {
+  height: 4em;
+  width: 100%;
+  background-color: rgb(01, 02, 03);
+}
+
+#border-small {
+  height: 2em;
+  width: 100%;
+  background-color: rgb(01, 02, 03);
+}
+
 #about {
   background-image: url("images/bg1.jpg");
   width: 100%;
-  height: 100vh;
+  height: fit-content;
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: cover;
@@ -92,6 +104,42 @@ nav ul li {
   position: relative;
   min-height: 100%;
 }
+
+#insta-feed {
+
+}
+
+.feed-item {
+  background-color: transparent;
+}
+
+.juicer-feed h1.referral a {
+  display: none !important;
+}
+
+.j-text {
+  display: none;
+}
+
+.j-poster {
+  display: none;
+}
+
+.juicer-feed.modern li.feed-item {
+  background-color: rgb(01,02,03) !important;
+}
+
+#self {
+  width: 20%;
+  display: block;
+  border-color: rgb(01, 02, 03);
+  border-width: 10px;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  top: 11%;
+}
+
 
 #about h2 {
   top: 10%;
@@ -111,7 +159,7 @@ nav ul li {
 #specialties {
   background-image: url("images/bg3.jpg");
   width: 100%;
-  height: 100vh;
+  height: fit-content;
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: cover;
@@ -170,7 +218,7 @@ nav ul li {
 #menu {
   background-image: url("images/bg3-mobile.jpg");
   width: 100%;
-  height: 100vh;
+  height: fit-content;
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: cover;
@@ -241,6 +289,17 @@ nav ul li {
 
 #disclaimer {
   font-size: 0.7em;
+}
+
+.menu-button {
+  width: 5em;
+  border-radius: 1em;
+      width: 12em;
+    font-size: 1em;
+}
+
+#gold-button {
+  background-color: #d4af37; 
 }
 
 #packages li {
@@ -351,6 +410,13 @@ nav ul li {
     padding-bottom: 2em;
   }
 
+  #self {
+    float: right;
+    position: initial;
+    padding:1.5em;
+    transform: translateX(0);
+  }
+
   #about-container {
     text-align: left;
     padding-left: 15%;
@@ -436,6 +502,10 @@ nav ul li {
 
   .menu-container ul {
     padding: 0;
+  }
+
+  .juicer-feed {
+    data-columns: "5";
   }
 
   #packages p {
