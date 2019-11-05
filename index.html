@@ -36,10 +36,10 @@
     <div id="border"></div>
     <section id="about">
       <h2>Hello!</h2>
-      <img id="self" src="assets/images/self.jpg" alt="Amber">
+      <img id="self" src="assets/images/self.jpg" alt="Amber" />
       <div id="about-container">
         <p>My name is Amber Williams</p>
-        
+
         <p>
           The owner of AMB:ition. I have obtained my Master Nutrition Therapist
           diploma through September 2018, as well as my Nutrition Therapist
@@ -68,9 +68,27 @@
     </section>
     <div id="border-small"></div>
     <section id="insta-feed">
-      <script src="https://assets.juicer.io/embed.js" type="text/javascript"></script>
-<link href="https://assets.juicer.io/embed.css" media="all" rel="stylesheet" type="text/css" />
-<ul class="juicer-feed" data-feed-id="ambitionnutrition1" data-per="5" data-columns= "5"; ><h1 class="referral"><a href="https://www.juicer.io">Powered by Juicer.io</a></h1></ul>
+      <script
+        src="https://assets.juicer.io/embed.js"
+        type="text/javascript"
+      ></script>
+      <link
+        href="https://assets.juicer.io/embed.css"
+        media="all"
+        rel="stylesheet"
+        type="text/css"
+      />
+      <ul
+        class="juicer-feed"
+        data-feed-id="ambitionnutrition1"
+        data-per="5"
+        data-columns="5"
+        ;
+      >
+        <h1 class="referral">
+          <a href="https://www.juicer.io">Powered by Juicer.io</a>
+        </h1>
+      </ul>
     </section>
     <div id="border-small"></div>
     <section id="menu">
@@ -90,34 +108,49 @@
         <h2>Package Pricing:</h2>
         <ul id="packages">
           <li>
-            <button class="menu-button" id='gold-button'>
-            Gold Package
+            <button class="menu-button" id="gold-button">
+              Gold Package
             </button>
           </li>
-          <!-- <p>
-            Includes four one hour sessions, three half hour sessions, three
-            fifteen minute check-ins, one grocery store tour, pantry cleanse,
-            and three
-          </p> -->
-          <li><button class="menu-button" id='silver-button'>
-            Silver Package
-          </button>
-          </li>
-          <!-- <p>
-            Includes three one hour sessions, three half hour sessions, two
-            fifteen minute check-ins, one grocery store tour, and one week of
-            meal
-          </p> -->
-
+          <div id="gold-modal" class="menu-modal">
+            <span class="close">&times;</span>
+            <h2>Gold Package - $670</h2>
+            <p>
+              Includes four one hour sessions, three half hour sessions, three
+              fifteen minute check-ins, one grocery store tour, pantry cleanse,
+              and three
+            </p>
+          </div>
           <li>
-              <li><button class="menu-button" id='bronze-button'>
-                  Bronze Package
-                </button>
+            <button class="menu-button" id="silver-button">
+              Silver Package
+            </button>
           </li>
-          <!-- <p>
-            Includes two one hour sessions, two half hour sessions, and one
-            grocery store tour.
-          </p> -->
+          <div id="silver-modal" class="menu-modal">
+            <span class="close">&times;</span>
+            <h2>Silver Package - $500</h2>
+            <p>
+              Includes three one hour sessions, three half hour sessions, two
+              fifteen minute check-ins, one grocery store tour, and one week of
+              meal
+            </p>
+          </div>
+
+          <li></li>
+          <li>
+            <button class="menu-button" id="bronze-button">
+              Bronze Package
+            </button>
+          </li>
+          <div id="bronze-modal" class="menu-modal">
+            <span class="close">&times;</span>
+            <h2>Bronze Package - $270</h2>
+            <p>
+              Includes two one hour sessions, two half hour sessions, and one
+              grocery store tour.
+            </p>
+          </div>
+          <div id="overlay"></div>
         </ul>
         <ul id="menu-grid">
           <li>Four One Hour Sessions - $250</li>
@@ -132,22 +165,24 @@
     </section>
     <div id="border-small"></div>
     <section id="specialties">
-      <h1>AMB:ition Specialties</h1>
-      <ul class="specialties-grid">
-        <li>Food Intolerance</li>
-        <li>Hormonal Imbalance</li>
-        <li>Gut Health</li>
-        <li>Gluten Free Diet</li>
-        <li>Paleo Diet</li>
-        <li>Clean Eating</li>
-        <li>Weight Loss</li>
-        <li>Digestive Health</li>
-        <li>Autoimmunity</li>
-        <li>Thyroid Disorders</li>
-        <li>Women's Health</li>
-        <li>Food Preparation</li>
-        <li>Weekly Cooking Classes</li>
-      </ul>
+      <div id="specialties-container">
+        <h1>AMB:ition Specialties</h1>
+        <ul class="specialties-grid">
+          <li>Food Intolerance</li>
+          <li>Hormonal Imbalance</li>
+          <li>Gut Health</li>
+          <li>Gluten Free Diet</li>
+          <li>Paleo Diet</li>
+          <li>Clean Eating</li>
+          <li>Weight Loss</li>
+          <li>Digestive Health</li>
+          <li>Autoimmunity</li>
+          <li>Thyroid Disorders</li>
+          <li>Women's Health</li>
+          <li>Food Preparation</li>
+          <li>Weekly Cooking Classes</li>
+        </ul>
+      </div>
     </section>
     <section id="contact">
       <a
