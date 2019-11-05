@@ -10,41 +10,41 @@ $(document).ready(function() {
       "linear"
     );
   });
-  $(".fa-bars").on("click", function() {
+  $(".fa-bars").on("touchstart click", function() {
     $("#burger-menu").toggle(250);
   });
-  $("#burger-menu a").on("click", function() {
+  $("#burger-menu a").on("touchstart click", function() {
     $("#burger-menu").toggle(250);
   });
 
-  $("#gold-button").on("click", function() {
+  $("#gold-button").on("touchstart click", function() {
     $("#overlay").fadeIn(1000);
     $("#gold-modal").fadeIn(500);
   });
-  $(".close").on("click", function() {
+  $(".close").on("touchstart click", function() {
     $("#overlay").fadeOut(1000);
     $(".menu-modal").fadeOut(500);
   });
 
-  $("#silver-button").on("click", function() {
+  $("#silver-button").on("touchstart click", function() {
     $("#overlay").fadeIn(1000);
     $("#silver-modal").fadeIn(500);
   });
-  $(".close").on("click", function() {
+  $(".close").on("touchstart click", function() {
     $("#overlay").fadeOut(1000);
     $(".menu-modal").fadeOut(500);
   });
 
-  $("#bronze-button").on("click", function() {
+  $("#bronze-button").on("touchstart click", function() {
     $("#overlay").fadeIn(1000);
     $("#bronze-modal").fadeIn(500);
   });
-  $(".close").on("click", function() {
+  $(".close").on("touchstart click", function() {
     $("#overlay").fadeOut(1000);
     $(".menu-modal").fadeOut(500);
   });
 
-  $("#overlay").on("click", function() {
+  $("#overlay").on("touchstart click", function() {
     $("#overlay").fadeOut(1000);
     $(".menu-modal").fadeOut(500);
   });
