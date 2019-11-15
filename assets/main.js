@@ -10,27 +10,29 @@ $(document).ready(function() {
       "linear"
     );
   });
-  $(".fa-bars").on("touchstart click", function() {
-    $("#burger-menu").toggle(250);
+  $(".fa-bars").on("click", function() {
+    $(this)
+      .next()
+      .fadeToggle(250);
   });
-  $("#burger-menu a").on("touchstart click", function() {
+  $("#burger-menu a").on("click", function() {
     $("#burger-menu").toggle(250);
   });
 
-  $("#gold-button").on("touchstart click", function() {
+  $("#gold-button").on("click", function() {
     $("#overlay").fadeIn(1000);
     $("#gold-modal").fadeIn(500);
   });
-  $(".close").on("touchstart click", function() {
+  $(".close").on("click", function() {
     $("#overlay").fadeOut(1000);
     $(".menu-modal").fadeOut(500);
   });
 
-  $("#silver-button").on("touchstart click", function() {
+  $("#silver-button").on("click", function() {
     $("#overlay").fadeIn(1000);
     $("#silver-modal").fadeIn(500);
   });
-  $(".close").on("touchstart click", function() {
+  $(".close").on("click", function() {
     $("#overlay").fadeOut(1000);
     $(".menu-modal").fadeOut(500);
   });
